@@ -5,16 +5,15 @@ import bcrypt
 def load_users():
     return {
         "admin": {
-            # password: admin
-            "password": b"$2b$12$NvmYtHENbs2FKGVpZdMxBeEoKek9T3rj3cZ4Gnpz/mXXATvEoxq1K",
+            "password": b"$2b$12$LZJhrYxJXQ6vZYxzqKfq9ubtNEn6XT8u7NT0J0uHez8LCK6uKUcHG",  # password: admin
             "role": "admin"
         },
         "staff": {
-            # password: staff
-            "password": b"$2b$12$HXVVRDgIzhx7WjXpbNq8AePq.7Rv88lX2zpN1VgN70LrgLLz5Dw3W",
+            "password": b"$2b$12$5F8K5sToXUqvJw3KxM5peOBFD7cI6Fu3Ygu3YarFv4l7EZaN4iFYK",  # password: staff
             "role": "staff"
         }
     }
+
 
 # Utility function to hash new passwords (not used in app flow, just for reference)
 def hash_password(plain_pw):
