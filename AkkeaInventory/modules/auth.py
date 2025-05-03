@@ -40,7 +40,7 @@ def login():
 
     if login_btn:
         if username in users:
-            hashed = users[username]["password"].encode()
+            hashed = users[username]["password"]
             if bcrypt.checkpw(password.encode(), hashed):
                 st.session_state.logged_in = True
                 st.session_state.username = username
