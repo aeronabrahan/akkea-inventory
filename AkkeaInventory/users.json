@@ -1,0 +1,10 @@
+{
+    "admin": {
+        "password": "$2b$12$vM.sm0/JnqPOwj7VG5fZQO9URyE8l7XlZC4UX1.ED/Q1rY9zqGRHa",
+        "role": "admin"
+    },
+    "staff": {
+        "password": "$2b$12$ei64HU5iQckhb1TsBhwuwOrn6WqHi8TYD6f9rDPWez7DRINjEzzIO",
+        "role": "staff"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "akkea-inventory",
+  "private_key_id": "36a6112af1c5190cac141e483f723065bb5718f3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDV2ams2xwYo8AV\nIZjH2chNHbvWYw4oSzYPvMUsyl6170AHERubUxKbykq2xdgCHmvBW6CqPSfrmu61\nYnvvdX3Gy3CnFUUl7VjRKouqPrqO3ugRrW7hInYoybvswIcpNDk7BHknRt2ljoa4\npPbcvbzEmU2BhLWCTOlo53R1M5kl3GPz0Ap9kOfUnoxMY5AeeqaYHuzdCdBm8coL\n+grvJjKZcgaZzvsObYmtcA/LIHTVZrSCIxgyUW6qGMTz2mKHkKlHaM60/E1jS1Aj\n10nwn5mgV3XRK6ARy4XOUZqGemR8o8IVv2O4YTZJhMVE1dRKP53EUl4onXnz53a4\nSWXjK/3BAgMBAAECggEAFoXuy4BmVKgGhpM7yqzC3nBnxLw5FQBa6Mxqff2wfPv+\nY+Am5rSYrKThOp/a0NpQYhSa9uMrDbMLOjptsDpRLXtm2Yoxdr2pUZpoDF2/+2U5\nzwbTu02MYV5h9x0N/0Z7Up51fjAGDzZUNSVWxMgNFi3JTn9iOJ+OI9jg2Kk/E5AS\nAXn9dq5HFQgG6WjhksDZ4rq0MchO90GsEqhs4even1ZtiS2Vqe/JBNSkxRraPGT9\niupyBwe1oi1LvPufqFynkmzHKa4ddtZ7ZO9TCs6XMtE4iBRKC56lPBsGcs9U9hyu\nZUnP2onB8avufbvFUf0Vpl6f+Y80IOoQLJy1Ekt/4wKBgQDuMvepdIKwd57MJZfw\nVnTEtgmDu3EKEVZA4fdOtCKbSukZBVokSLEhpiOErXdp7CQex5rsYrYUrgtfwdDf\nABndfkfQ4jnv9zTBHJYp/aaUkgSkntZnLo9KsdkFVnScGLaD/d2Hl1g+vhYE3mL+\nXs0ihTlGHnAqEff80BiDazEEUwKBgQDl1N93Dy9FPcRRtK7rLSCxHAMEkU5GNiId\nsHksoaVPyxyUglWd4OxhoGRso4sjFVlu9OPt0bsJgf+Qin9IE94gLS3p1ZrOImou\n/fSrMPEeqyv0XQvgROsDeEqStXRxfsXt0UJNTwUhB7zaVk46Tq4Ap1xb2S1Xl62a\nx22XRcwzGwKBgQCDf7eh4SRU73THFunuUIxeHHDcPJqHCFMptpWk6WVBffV5Tq8Y\n4NiIzwNEt874ttip9V/dqBEFEaBN2N3Kfm/JC3HyKzH4++wvv+xWeiWAV6wghV+v\nztBkWBKLE9OEaVA5RekKdc7NtHrLbUoRS5zLteiMgTlCwHC7LNablo2U6QKBgQDj\nbs0YD3GyrlXYmNlDpmukd9jQq03vEuCdyqWOsgNZu9/zYiqBSjQAw+y8yPYF6LmQ\noEvxaksRNJCHI1ajJ+32n17A9/zyIYI8MFjvE0Z4F+EuNulqrCh4TZBWL7QkH9ST\n6zEWOa0Uq4iJ80AEWRm9UeCGj5pcBJ/p+5GKUaqpowKBgBAkBKC5Rzn1OsCIz4fM\nWV2LyJ5R1oelhP8EcEB0kXBEhbuYESLykIvTCaOxunvJaYBYxkYXAd0rfacnqSyz\nNIbDPO5zeH8P9rRFdaHuWGxmuuovO7gU2agLN0LUWIUL6qTEregaWsyFWdPTYUVN\nMjhiHHlml5da9tFBJWjiKSgg\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@akkea-inventory.iam.gserviceaccount.com",
+  "client_id": "114868646782851417012",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40akkea-inventory.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
