@@ -38,24 +38,24 @@ if not logged_in:
 
 # Sidebar logo and menu
 # st.sidebar.image("assets/logo.png", width=300)
-def get_logo_path():
-    if getattr(sys, 'frozen', False):
-        # If bundled as an .exe by PyInstaller
-        return os.path.join(sys._MEIPASS, "assets", "logo.png")
-    return os.path.join("assets", "logo.png")
+# def get_logo_path():
+#     if getattr(sys, 'frozen', False):
+#         # If bundled as an .exe by PyInstaller
+#         return os.path.join(sys._MEIPASS, "assets", "logo.png")
+#     return os.path.join("assets", "logo.png")
 
-logo_path = get_logo_path()
+# logo_path = get_logo_path()
 
-if os.path.exists(logo_path):
-    with open("assets/logo.png", "rb") as f:
-        logo_data = f.read()
-    logo_base64 = base64.b64encode(logo_data).decode()
-    st.sidebar.markdown(
-        f'<div style="text-align:center;"><img src="data:image/png;base64,{logo_base64}" width="300"/></div>',
-        unsafe_allow_html=True
-    )
-else:
-    st.sidebar.warning("⚠️ `logo.png` not found in `assets/` folder.")
+# if os.path.exists(logo_path):
+#     with open("assets/logo.png", "rb") as f:
+#         logo_data = f.read()
+#     logo_base64 = base64.b64encode(logo_data).decode()
+#     st.sidebar.markdown(
+#         f'<div style="text-align:center;"><img src="data:image/png;base64,{logo_base64}" width="300"/></div>',
+#         unsafe_allow_html=True
+#     )
+# else:
+#     st.sidebar.warning("⚠️ `logo.png` not found in `assets/` folder.")
 
 st.sidebar.title("Akkea Inventory")
 
