@@ -7,15 +7,20 @@ import bcrypt
 def load_users():
     return {
         "admin": {
-            "password": "admin",
+            "password": b"$2b$12$8ajkwbPuhI9qq6WkRHzb9OvT6DqGtviOgUlEqtKCBksrV6CzcbxQi",
             "role": "admin"
         },
         "staff": {
-            "password": "staff",
+            "password": b"$2b$12$JtuycK1.vgH5xFEx3LpMi.1pgNNQRfBKT.zWxDK1VaVqUsDlhqFBm",
             "role": "staff"
         }
     }
+    
+def hash_password(plain_pw):
+    return bcrypt.hashpw(plain_pw.encode(), bcrypt.gensalt())
 
+print("Admin:", hash_password("admin"))
+print("Staff:", hash_password("staff"))
 def login():
     """Handles login UI and session state"""
     if "logged_in" not in st.session_state:
