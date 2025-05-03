@@ -6,10 +6,15 @@ import bcrypt
 
 def load_users():
     return {
-        "admin": {"password": "hashed-password", "role": "admin"},
-        "staff": {"password": "hashed-password", "role": "staff"}
+        "admin": {
+            "password": b"$2b$12$8ajkwbPuhI9qq6WkRHzb9OvT6DqGtviOgUlEqtKCBksrV6CzcbxQi",
+            "role": "admin"
+        },
+        "staff": {
+            "password": b"$2b$12$JtuycK1.vgH5xFEx3LpMi.1pgNNQRfBKT.zWxDK1VaVqUsDlhqFBm",
+            "role": "staff"
+        }
     }
-
 
 def login():
     """Handles login UI and session state"""
