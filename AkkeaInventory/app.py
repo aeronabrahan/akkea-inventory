@@ -47,7 +47,7 @@ def get_logo_path():
 logo_path = get_logo_path()
 
 if os.path.exists(logo_path):
-    with open(logo_path, "rb") as f:
+    with open("assets/logo.png", "rb") as f:
         logo_data = f.read()
     logo_base64 = base64.b64encode(logo_data).decode()
     st.sidebar.markdown(
