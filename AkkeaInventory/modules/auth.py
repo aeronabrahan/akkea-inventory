@@ -1,28 +1,30 @@
-# modules/auth.py
-
 import streamlit as st
-import json
 import bcrypt
 
+# Pre-hashed passwords (use bcrypt.hashpw("yourpassword".encode(), bcrypt.gensalt()))
 def load_users():
     return {
         "admin": {
-            # "password": b"$2b$12$8ajkwbPuhI9qq6WkRHzb9OvT6DqGtviOgUlEqtKCBksrV6CzcbxQi",
-            "password": "admin",
+            # password: admin
+            "password": b"$2b$12$NvmYtHENbs2FKGVpZdMxBeEoKek9T3rj3cZ4Gnpz/mXXATvEoxq1K",
             "role": "admin"
         },
         "staff": {
-            # "password": b"$2b$12$JtuycK1.vgH5xFEx3LpMi.1pgNNQRfBKT.zWxDK1VaVqUsDlhqFBm",
-            "password": "staff",
+            # password: staff
+            "password": b"$2b$12$HXVVRDgIzhx7WjXpbNq8AePq.7Rv88lX2zpN1VgN70LrgLLz5Dw3W",
             "role": "staff"
         }
     }
-    
+
+# Utility function to hash new passwords (not used in app flow, just for reference)
 def hash_password(plain_pw):
     return bcrypt.hashpw(plain_pw.encode(), bcrypt.gensalt())
 
-print("Admin:", hash_password("admin"))
-print("Staff:", hash_password("staff"))
+# To generate new passwords (you can run this in a separate script if needed)
+if __name__ == "__main__":
+    print("Admin:", hash_password("admin"))
+    print("Staff:", hash_password("staff"))
+
 def login():
     """Handles login UI and session state"""
     if "logged_in" not in st.session_state:
@@ -47,9 +49,8 @@ def login():
                 st.session_state.logged_in = True
                 st.session_state.username = username
                 st.session_state.role = users[username]["role"]
-                # STOP right after rerun to avoid breaking the return call
-                st.rerun()
-                return  # <--- prevents further execution
+                st.rerun()  # safely rerun after setting state
+                return  # prevents continued execution
             else:
                 st.error("Incorrect password.")
         else:
