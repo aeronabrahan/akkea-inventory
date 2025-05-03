@@ -5,6 +5,8 @@ import streamlit as st
 # Set page config first
 st.set_page_config(page_title="Akkea Inventory", layout="wide")
 
+import os
+import sys
 import base64
 import time
 import pytz
@@ -35,7 +37,26 @@ if not logged_in:
     st.stop()
 
 # Sidebar logo and menu
-st.sidebar.image("assets/logo.png", width=300)
+# st.sidebar.image("assets/logo.png", width=300)
+def get_logo_path():
+    if getattr(sys, 'frozen', False):
+        # If bundled as an .exe by PyInstaller
+        return os.path.join(sys._MEIPASS, "assets", "logo.png")
+    return os.path.join("assets", "logo.png")
+
+logo_path = get_logo_path()
+
+if os.path.exists(logo_path):
+    with open(logo_path, "rb") as f:
+        logo_data = f.read()
+    logo_base64 = base64.b64encode(logo_data).decode()
+    st.sidebar.markdown(
+        f'<div style="text-align:center;"><img src="data:image/png;base64,{logo_base64}" width="300"/></div>',
+        unsafe_allow_html=True
+    )
+else:
+    st.sidebar.warning("⚠️ `logo.png` not found in `assets/` folder.")
+
 st.sidebar.title("Akkea Inventory")
 
 menu_admin = [
