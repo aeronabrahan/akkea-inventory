@@ -7,11 +7,13 @@ import bcrypt
 def load_users():
     return {
         "admin": {
-            "password": b"$2b$12$8ajkwbPuhI9qq6WkRHzb9OvT6DqGtviOgUlEqtKCBksrV6CzcbxQi",
+            # "password": b"$2b$12$8ajkwbPuhI9qq6WkRHzb9OvT6DqGtviOgUlEqtKCBksrV6CzcbxQi",
+            "password": "admin",
             "role": "admin"
         },
         "staff": {
-            "password": b"$2b$12$JtuycK1.vgH5xFEx3LpMi.1pgNNQRfBKT.zWxDK1VaVqUsDlhqFBm",
+            # "password": b"$2b$12$JtuycK1.vgH5xFEx3LpMi.1pgNNQRfBKT.zWxDK1VaVqUsDlhqFBm",
+            "password": "staff",
             "role": "staff"
         }
     }
