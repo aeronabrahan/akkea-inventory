@@ -5,7 +5,6 @@ import json
 import bcrypt
 
 def load_users():
-    """Load users from users.json"""
     with open("users.json", "r") as f:
         return json.load(f)
 
