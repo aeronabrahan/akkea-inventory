@@ -5,8 +5,11 @@ import json
 import bcrypt
 
 def load_users():
-    with open("users.json", "r") as f:
-        return json.load(f)
+    return {
+        "admin": {"password": "hashed-password", "role": "admin"},
+        "staff": {"password": "hashed-password", "role": "staff"}
+    }
+
 
 def login():
     """Handles login UI and session state"""
