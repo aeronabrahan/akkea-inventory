@@ -93,18 +93,18 @@ if st.sidebar.button("🔓 Logout"):
 
 if page == "🏠 Dashboard":
     # Load and center logo
-    with open("assets/logo.png", "rb") as f:
-        logo_data = f.read()
-    logo_base64 = base64.b64encode(logo_data).decode()
+    # with open("assets/logo.png", "rb") as f:
+    #     logo_data = f.read()
+    # logo_base64 = base64.b64encode(logo_data).decode()
 
-    st.markdown(
-        f"""
-        <div style='text-align: center; margin-top: -350px; margin-bottom: -300px;'>
-            <img src="data:image/png;base64,{logo_base64}" width="750" style="object-fit: contain;" />
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # st.markdown(
+    #     f"""
+    #     <div style='text-align: center; margin-top: -350px; margin-bottom: -300px;'>
+    #         <img src="data:image/png;base64,{logo_base64}" width="750" style="object-fit: contain;" />
+    #     </div>
+    #     """,
+    #     unsafe_allow_html=True
+    # )
 
     # Date & greeting
     now = datetime.now().strftime("%A, %B %d, %Y — %I:%M %p")
