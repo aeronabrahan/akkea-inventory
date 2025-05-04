@@ -1,15 +1,9 @@
 # app.py
 
 import streamlit as st
-
-# Set page config first
-st.set_page_config(page_title="Akkea Inventory", layout="wide")
-
 import os
 import sys
 import base64
-import time
-import pytz
 from datetime import datetime
 from modules import (
     db_utils,
@@ -27,6 +21,8 @@ from modules import (
     materials,
     customer_orders
 )
+
+st.set_page_config(page_title="Akkea Inventory", layout="wide")
 
 # ---------------- Ensure products table has image_path column ----------------
 db_utils.init_db()
