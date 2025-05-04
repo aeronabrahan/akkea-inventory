@@ -33,20 +33,20 @@ except:
 
 materials.init_materials_table()
 
-# ---------------- LOGO ----------------
-def get_logo_path():
-    if getattr(sys, 'frozen', False):
-        return os.path.join(sys._MEIPASS, "assets", "logo.png")
-    return os.path.join("assets", "logo.png")
+# # ---------------- LOGO ----------------
+# def get_logo_path():
+#     if getattr(sys, 'frozen', False):
+#         return os.path.join(sys._MEIPASS, "assets", "logo.png")
+#     return os.path.join("assets", "logo.png")
 
-logo_path = get_logo_path()
-if os.path.exists(logo_path):
-    with open(logo_path, "rb") as f:
-        logo_data = f.read()
-    logo_base64 = base64.b64encode(logo_data).decode()
-    st.sidebar.markdown(f'<div style="text-align:center;"><img src="data:image/png;base64,{logo_base64}" width="300"/></div>', unsafe_allow_html=True)
-else:
-    st.sidebar.warning("⚠️ logo.png not found")
+# logo_path = get_logo_path()
+# if os.path.exists(logo_path):
+#     with open(logo_path, "rb") as f:
+#         logo_data = f.read()
+#     logo_base64 = base64.b64encode(logo_data).decode()
+#     st.sidebar.markdown(f'<div style="text-align:center;"><img src="data:image/png;base64,{logo_base64}" width="300"/></div>', unsafe_allow_html=True)
+# else:
+#     st.sidebar.warning("⚠️ logo.png not found")
 
 # ---------------- ROLE SELECTOR ----------------
 if not st.session_state.get("customer_logged_in", False) and not st.session_state.get("logged_in", False):
